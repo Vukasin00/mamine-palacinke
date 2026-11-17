@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sr" data-tenant="maminepalacinke">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Portal za kuhinju — Mamine palačinke" />
+    <meta name="theme-color" content="#231F20" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kuhinja" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/mamine-palacinke/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/mamine-palacinke/apple-touch-icon.png" />
+    <!-- The kitchen's own manifest, in the HTML from the start: iOS Safari reads the manifest link when the page loads and
+         ignores a later change by the app, so a dynamically swapped link made "Add to Home Screen" install the customer app. -->
+    <link rel="manifest" href="/mamine-palacinke/manifest-kuhinja.webmanifest" />
+    <title>Kuhinja · Mamine palačinke</title>
+    <style>
+      /* Splash painted before the JS bundle arrives: the kitchen is dark, so the splash is too. */
+      html, body, #root { height: 100%; margin: 0; }
+      body { background: #231F20; }
+      .splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--color-cream-100, #fff); }
+      .splash-name { font-family: var(--font-display, sans-serif); font-weight: var(--display-weight, 400); font-size: calc(40px * var(--display-scale, 1)); letter-spacing: var(--display-tracking, 0.02em); text-transform: var(--display-case, none); }
+      .splash-sub { font: 600 12px -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+    </style>
+  <style id="tenant-theme">
+ html[data-tenant="maminepalacinke"] {
+  --color-cream-50: #FFFBFA;
+  --color-cream-100: #FDF1F0;
+  --color-cream-200: #F9E1E0;
+  --color-cream-300: #F1CBCA;
+  --color-cream-400: #D9A9A8;
+  --color-azure-100: #FDE8E7;
+  --color-azure-200: #FAD4D3;
+  --color-azure-300: #F6BABA;
+  --color-azure-400: #F2A3A4;
+  --color-on-primary: #231F20;
+  --color-forest-950: #141112;
+  --color-forest-900: #231F20;
+  --color-forest-800: #2B2627;
+  --color-forest-700: #3A3335;
+  --color-forest-600: #5E5456;
+  --color-forest-500: #7F7476;
+  --color-forest-400: #A0989A;
+  --color-flame-100: #FBE3E6;
+  --color-flame-200: #F2B9C4;
+  --color-flame-500: #231F20;
+  --color-flame-600: #A8355A;
+  --color-flame-700: #8A2A49;
+  --color-tomato-500: #D1393A;
+  --color-tomato-100: #FBE1DF;
+  --color-basil-500: #3E8E5A;
+  --color-basil-100: #E1F0E5;
+  --color-ink: #231F20;
+  --color-ink-2: #6A5F61;
+  --color-ink-3: #968B8D;
+  --font-display: "Lobster", "Brush Script MT", Georgia, cursive;
+  --display-scale: 0.86;
+  --display-tracking: 0;
+  --display-case: none;
+  --display-weight: 400;
+  --motif: radial-gradient(circle, rgba(255, 255, 255, 0.75) 0 3px, transparent 3.5px) 0 0 / 26px 26px, radial-gradient(circle, rgba(35, 31, 32, 0.08) 0 2px, transparent 2.5px) 13px 13px / 26px 26px, linear-gradient(#F9C7C6, #F9C7C6);
+  --glass-bg: rgba(253, 241, 240, 0.82);
+ }
+/* self-hosted display font (latin + latin-ext for Serbian diacritics); /mamine-palacinke/ is filled in by vite.config.ts */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/mamine-palacinke/fonts/lobster-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/mamine-palacinke/fonts/lobster-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    
+    <script type="module" crossorigin src="/mamine-palacinke/assets/main-BRNX1LMR.js"></script>
+    <link rel="stylesheet" crossorigin href="/mamine-palacinke/assets/main-8aLNoPGg.css"><script id="vite-plugin-pwa:register-sw" src="/mamine-palacinke/registerSW.js"></script></head>
+  <body>
+    <div id="root"><div class="splash"><span class="splash-name">KUHINJA</span><span class="splash-sub">Mamine palačinke · Učitavanje</span></div></div>
+  </body>
+</html>

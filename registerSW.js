@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/mamine-palacinke/sw.js', { scope: '/mamine-palacinke/' })})}

@@ -1,0 +1,47 @@
+{
+  "info": {
+    "id": "maminepalacinke",
+    "guideKey": "mp-guide-done",
+    "storageKey": "mamine-palacinke",
+    "fulfillments": [
+      "delivery",
+      "pickup"
+    ],
+    "sizes": 9,
+    "name": "Mamine palačinke",
+    "address": "Bulevar kralja Aleksandra 125, Beograd",
+    "phone": "061 261 8641",
+    "hours": "Zvezdara svaki dan 15:15 – 22:45 · Novi Beograd pon–pet 09:45 – 22:45, vikend 15:15 – 23:00 · Centar od 09:45 (pet–sub do 00:30)",
+    "instagram": "https://www.instagram.com/maminepalacinke/",
+    "logo": "logo.png",
+    "deliveryFee": 250,
+    "cardPayment": [],
+    "locations": 3,
+    "categories": 6,
+    "menu": "static",
+    "menuItems": 34,
+    "closedToday": false,
+    "soldOutToday": [],
+    "orders": "local",
+    "tenantPath": "maminepalacinke",
+    "emulator": false
+  },
+  "style": {
+    "bg": "#FDF1F0",
+    "card": "#FFFBFA",
+    "inset": "#F9E1E0",
+    "line": "#F1CBCA",
+    "primary": "#F6BABA",
+    "onPrimary": "#231F20",
+    "dark": "#231F20",
+    "dark2": "#2B2627",
+    "cta": "#231F20",
+    "ink": "#231F20",
+    "ink2": "#6A5F61",
+    "font": "\"Lobster\", \"Brush Script MT\", Georgia, cursive",
+    "tracking": "0",
+    "case": "none",
+    "weight": "400",
+    "scale": "0.86"
+  }
+}
